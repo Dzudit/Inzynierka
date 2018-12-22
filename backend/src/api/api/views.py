@@ -29,3 +29,4 @@ class CategorieViewSet(viewsets.ModelViewSet):
     serializer_class = CategorieSerializer
     queryset = Categorie.objects.all()
 
+#tutaj potrzedbje dodac cos co mi zwric token
