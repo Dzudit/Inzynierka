@@ -3,6 +3,9 @@ from django.utils.timezone import now
 
 from django.db import models
 
+# Create your models here.
+
+# Create your models here.
 
 class UserDetails(models.Model):
     salary = models.DecimalField('Salary', default=2000, decimal_places=2, max_digits=10)
@@ -35,7 +38,7 @@ class Payment(models.Model):
     category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
-        return f'{self.date}, {self.price}, {self.title}'
+        return f'{self.date}, {self.price}, {self.title}, {self.category}'
 
 
 class MonthDetails(models.Model):
